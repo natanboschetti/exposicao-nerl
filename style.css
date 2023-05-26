@@ -1,0 +1,146 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2195f347;
+  border-radius: 1rem;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  gap: 0.1rem;
+  background-color: #181818;
+  color: #ffffffce;
+
+  height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  padding: 1rem;
+
+  border-right: 1px solid #ffffff1e;
+}
+
+
+aside h1 {
+  font-size: 3rem;
+  color: #2196F3;
+}
+
+aside h2 {
+  font-size: 2rem;
+}
+
+aside p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+aside p:nth-child(2) {
+  color: #2196F3;
+}
+
+main {
+  padding: 5rem;
+
+  border-left: 1px solid #ffffff1e;
+
+  overflow-y: scroll;
+}
+
+.post-container {
+  display: flex;
+}
+
+.post-container p {
+  text-align: left;
+
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7rem;
+
+  padding: 1rem;
+
+  font-size: 1.2rem;
+}
+
+main .main-title {
+  color: #ffffff89;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ffffff1e;
+  padding: 1rem 1rem;
+}
+
+.post {
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffffff1e;
+}
+
+.post a {
+  font-weight: bold;
+  color: #2196F3;
+}
+
+main img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  main {
+    padding: 0.3rem;
+    overflow-y: visible;
+  }
+
+  main img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .post-container {
+    padding-top: 1rem;
+    display: block;
+  }
+
+  .post-container p {
+    padding: 0.7rem 0rem;
+  }
+}
