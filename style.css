@@ -36,6 +36,8 @@ body {
   height: 100vh;
 
   font-family: 'Inter', sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 aside {
@@ -81,8 +83,12 @@ main {
   display: flex;
 }
 
-.post-container p {
-  text-align: left;
+.post-container .post-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  text-align: justify;
 
   font-family: 'Roboto', sans-serif;
   line-height: 1.7rem;
@@ -92,17 +98,28 @@ main {
   font-size: 1.2rem;
 }
 
+.post-text .prompt {
+  background-color: #00000049;
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
 main .main-title {
   color: #ffffff89;
   font-size: 1.5rem;
-  border-bottom: 1px solid #ffffff1e;
+  //border-bottom: 1px solid #ffffff1e;
   padding: 1rem 1rem;
+  text-align: center;
 }
 
 .post {
   margin: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ffffff1e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  border: 1px solid #ffffff1e;
+  border-radius: 1rem;
 }
 
 .post a {
@@ -120,8 +137,14 @@ main img {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+
+    overflow-y: visible;
   }
 
+  aside {
+    background-color: #00000049;
+    border-bottom: black;
+  }
 
   main {
     padding: 0.3rem;
@@ -140,7 +163,7 @@ main img {
     display: block;
   }
 
-  .post-container p {
+  .post-container .post-text {
     padding: 0.7rem 0rem;
   }
 }
