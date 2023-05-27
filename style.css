@@ -52,6 +52,11 @@ body {
   overflow-x: hidden;
 }
 
+body a {
+  font-weight: bold;
+  color: #2196F3;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -87,6 +92,14 @@ aside p:nth-child(2) {
   color: #2196F3;
 }
 
+aside small {
+  color: #ffffff93;
+}
+
+aside small a {
+  color: #2195f38a;
+}
+
 main {
   padding: 5rem;
 
@@ -117,10 +130,17 @@ main {
 }
 
 .post-text .prompt {
+  display: block;
   background-color: #00000049;
   padding: 1rem;
 
   border-radius: 1rem;
+}
+
+.post-text small {
+  align-self: flex-end;
+  color: #ffffff9d;
+  font-size: 0.8rem;
 }
 
 main .main-title {
@@ -144,11 +164,6 @@ main .main-title {
   transition: 0.3s;
 }
 
-.post a {
-  font-weight: bold;
-  color: #2196F3;
-}
-
 main img {
   width: 40%;
   object-fit: cover;
@@ -160,7 +175,6 @@ main img {
 
 main img:hover {
   transform: scale(130%);
-
 }
 
 @media (max-width: 768px) {
