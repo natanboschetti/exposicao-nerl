@@ -6,4 +6,4 @@ Uma exposição de imagens feitas por IAs
 - CSS
 
 # Pages
-(Projeto)[https://natanboschetti.github.io/exposicao-nerl/]
+[Projeto](https://natanboschetti.github.io/exposicao-nerl/)
