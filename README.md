@@ -1,4 +1,5 @@
 # Projeto
+## Trabalho escolar
 Uma exposição de imagens feitas por IAs
 
 # Tecnologias
